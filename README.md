@@ -4,7 +4,6 @@ A full-stack IoT smart parking system built as a third-year mini project.
 PARQ allows users to pre-book parking slots via a mobile app, with real-time slot availability tracked by ultrasonic sensors and a servo motor-all synced through Firebase Realtime Database.
 
 ## Demo
-
 ## Hardware Working Model
 
 [Click here to watch demo](working_vd.mp4)
@@ -15,7 +14,7 @@ PARQ allows users to pre-book parking slots via a mobile app, with real-time slo
 |---|---|---|---|
 | ![PARQ Logo](logo_app.jpeg) | ![Signup](signup_img.png) |![Login](login_img.png) | ![Home](prebookpg_img.png)
 
-| Profile | Slot Map | Booking Details
+| Profile | Slot Map | Booking Details |
 |---|---|---|
 |![Profile](profile_img.png) | ![Booking](prebookdetails_img.png) | ![Map](map_app.jpeg) 
 
@@ -77,7 +76,7 @@ Arduino Uno
 - Jumper wires
 - Custom foam board parking model
 
-  ## How It Works
+## How It Works
 
 - User opens PARQ app and selects a date, time, and available slot
 - Booking is saved to Firebase Realtime Database
@@ -87,7 +86,7 @@ Arduino Uno
 - Arduino sends occupancy status back to ESP8266
 - ESP8266 updates Firebase — slot status reflects on the app in real time
 
-  ## Project Structure
+## Project Structure
 
 ```
 IOT-Smart-Parking-parq/
@@ -145,7 +144,7 @@ IOT-Smart-Parking-parq/
 - Dedicated entry/exit gate system to be integrated
 - Future features planned: EV charging slot booking, car wash options, license plate recognition
 
-  ## Team
+## Team
 
 | Member | Primary Role |
 |---|---|
