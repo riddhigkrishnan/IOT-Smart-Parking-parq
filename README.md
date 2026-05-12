@@ -13,6 +13,13 @@ Logo
 
 ![Logo](logo_app.jpeg)
 
-ScreenSlot 
-MapBooking 
-ConfirmedShow 
+Login and Sign Up
+
+![Login](login_img.png) 
+![Signup](signup_img.png)
+
+Prebook Page and Confirmation Page
+![Home](prebookpg_img.png) ![Booking](prebookdetails_img.png)
+
+MapBooking
+![Map](map_app.jpeg)
