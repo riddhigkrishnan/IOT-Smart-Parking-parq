@@ -1,4 +1,4 @@
-# PARQ — IoT Based Smart Parking System
+# PARQ — IoT Based Smart Parking System 
 
 A full-stack IoT smart parking system built as a third-year mini project.
 PARQ allows users to pre-book parking slots via a mobile app, with real-time slot availability tracked by ultrasonic sensors and a servo motor-all synced through Firebase Realtime Database.
