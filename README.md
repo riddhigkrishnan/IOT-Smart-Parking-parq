@@ -2,7 +2,8 @@
 
 A full-stack IoT smart parking system built as a third-year mini project.
 PARQ allows users to pre-book parking slots via a mobile app, with real-time slot availability tracked by ultrasonic sensors and a servo motor-all synced through Firebase Realtime Database.
-##Demo
+
+## Demo
 
 ## Hardware Working Model
 
@@ -76,6 +77,16 @@ Arduino Uno
 - Jumper wires
 - Custom foam board parking model
 
+  ## How It Works
+
+- User opens PARQ app and selects a date, time, and available slot
+- Booking is saved to Firebase Realtime Database
+- ESP8266 streams the booking data and sends it to Arduino via serial
+- Arduino receives the booking and rotates the servo motor to the booked slot position
+- Ultrasonic sensor detects when a vehicle enters the slot
+- Arduino sends occupancy status back to ESP8266
+- ESP8266 updates Firebase — slot status reflects on the app in real time
+
   ## Project Structure
 
 ```
@@ -95,7 +106,10 @@ IOT-Smart-Parking-parq/
 └── working_vd.mp4              # Hardware demo video
 ```
 
+## Setup & Installation
+
 ### Hardware
+
 1. Connect HC-SR04 sensors to Arduino:
    - Sensor 1: Trig = 3, Echo = 4
    - Sensor 2: Trig = 6, Echo = 7
