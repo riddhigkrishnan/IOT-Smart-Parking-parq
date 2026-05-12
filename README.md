@@ -1,7 +1,5 @@
 # PARQ — IoT Based Smart Parking System
 
-![PARQ Logo](logo_app.jpeg)
-
 A full-stack IoT smart parking system built as a third-year mini project.
 PARQ allows users to pre-book parking slots via a mobile app, with real-time slot availability tracked by ultrasonic sensors and a servo motor-all synced through Firebase Realtime Database.
 ##Demo
@@ -12,13 +10,13 @@ PARQ allows users to pre-book parking slots via a mobile app, with real-time slo
 
 ## App Screenshots
 
-| Login | Sign Up | Home |
-|---|---|---|
-| ![Login](login_img.png) | ![Signup](signup_img.png) | ![Home](prebookpg_img.png) |
+| Logo | Sign Up | Login | Home |
+|---|---|---|---|
+| ![PARQ Logo](logo_app.jpeg) | ![Signup](signup_img.png) |![Login](login_img.png) | ![Home](prebookpg_img.png)
 
-| Booking Details | Slot Map | Profile |
+| Profile | Slot Map | Booking Details
 |---|---|---|
-| ![Booking](prebookdetails_img.png) | ![Map](map_app.jpeg) | ![Profile](profile_img.png) |
+|![Profile](profile_img.png) | ![Booking](prebookdetails_img.png) | ![Map](map_app.jpeg) 
 
 ## Hardware & Backend
 
@@ -74,7 +72,7 @@ Arduino Uno
 - Arduino Uno
 - ESP8266 Wi-Fi Module
 - 4x HC-SR04 Ultrasonic Sensors
-- Servo Motor (SG90)
+- Servo Motor (MG995)
 - Jumper wires
 - Custom foam board parking model
 
@@ -110,4 +108,41 @@ IOT-Smart-Parking-parq/
    - ESP RX → Arduino TX (pin 13)
 4. Upload `parking_controller.ino` to Arduino Uno
 5. Replace credentials in `firebase_bridge.ino` and upload to ESP8266
+
+### Firebase
+
+- Create a Firebase project at console.firebase.google.com
+- Enable Realtime Database
+- Copy your API key and database URL into firebase_bridge.ino
+
+### Flutter App
+
+- Clone the repo and navigate to the app/ folder
+- Add your google-services.json to app/android/app/
+- Run flutter pub get
+- Run flutter run
+
+## Limitations & Future Scope
+
+- Requires stable Wi-Fi connectivity for real-time sync
+- Current prototype optimized for model scale; sensor calibration needed for real parking dimensions
+- Single location support — multi-location integration planned
+- Email verification for secure user authentication (planned)
+- Dedicated entry/exit gate system to be integrated
+- Future features planned: EV charging slot booking, car wash options, license plate recognition
+
+  ## Team
+
+| Member | Primary Role |
+|---|---|
+| Riddhi Gopikrishnan | Flutter Mobile App Development and Firebase Set Up |
+| Member 2 | Arduino Hardware & Firmware |
+| Member 3 | ESP8266 Firebase Integration |
+| Member 4 | Hardware Model & Circuit Design |
+
+> Note: All members contributed across hardware and software components.
+
+## Built With
+
+Flutter · Firebase · Arduino · ESP8266 · Dart
 
