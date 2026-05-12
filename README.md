@@ -4,7 +4,6 @@ A full-stack IoT smart parking system built as a third-year mini project.
 PARQ allows users to pre-book parking slots via a mobile app, with real-time slot availability tracked by ultrasonic sensors and a servo motor-all synced through Firebase Realtime Database.
 
 ## Demo
-## Hardware Working Model
 
 [Click here to watch demo](working_vd.mp4)
 
@@ -12,11 +11,11 @@ PARQ allows users to pre-book parking slots via a mobile app, with real-time slo
 
 | Logo | Sign Up | Login | Home |
 |---|---|---|---|
-| ![PARQ Logo](logo_app.jpeg) | ![Signup](signup_img.png) |![Login](login_img.png) | ![Home](prebookpg_img.png)
+| ![PARQ Logo](logo_app.jpeg) | ![Signup](signup_img.png) |![Login](login_img.png) | ![Home](prebookpg_img.png) |
 
 | Profile | Slot Map | Booking Details |
 |---|---|---|
-|![Profile](profile_img.png) | ![Booking](prebookdetails_img.png) | ![Map](map_app.jpeg) 
+|![Profile](profile_img.png) | ![Booking](prebookdetails_img.png) | ![Map](map_app.jpeg) |
 
 ## Hardware & Backend
 
